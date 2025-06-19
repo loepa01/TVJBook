@@ -1,0 +1,23 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: "Materiály"
+    numbered: False
+    chapters:
+    - file: materialy/00-uvod-python-vypl
+      title: Úvod do jazyka Python
+    - file: materialy/00-uvod-nn
+      title: Úvod do neuronových sítí
+
+  - caption: "Miniprojekty"
+    numbered: False
+    chapters:      
+    - file: miniprojekty/01-rozpoznavani-cislic
+      title: 1. Rozpoznávání číslic pomocí neuronových sítí
+      
+    - file: miniprojekty/02-small-scale-chatgpt
+      title: 2. Small-scale ChatGPT - generování textu pomocí neuronových sítí
+      
