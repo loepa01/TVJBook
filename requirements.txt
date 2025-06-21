@@ -3,3 +3,6 @@ jupyter-book
 matplotlib
 numpy
 scipy
+torch
+torchvision
+torchsummary
