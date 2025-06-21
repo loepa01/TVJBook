@@ -9,3 +9,5 @@ torchvision
 torchsummary
 torchviz
 torchview
+python3-pydot
+graphviz
