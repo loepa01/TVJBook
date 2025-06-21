@@ -6,3 +6,5 @@ scipy
 torch
 torchvision
 torchsummary
+torchviz
+torchview
