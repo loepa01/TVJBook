@@ -13,4 +13,4 @@ pydot
 graphviz
 pandas
 
-tensorflow
+#tensorflow[and-cuda]
