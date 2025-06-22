@@ -40,17 +40,17 @@ launch_buttons:
   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
   colab_url                 : "https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
 
-#parse:
-#  myst_enable_extensions:
-#    # don't forget to list any other extensions you want enabled,
-#    # including those that are enabled by default!
-#    - html_admonition
-#    - html_image
-#    - amsmath
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - html_admonition
+    - html_image
+    - amsmath
 
 # ignore VS code files
 only_build_toc_files: true
-exclude_patterns: [".history", ".vscode", "README.md", "markdown*", "notebooks*", "insp", "admonitions-test.ipynb"]
+exclude_patterns: [".history", ".vscode", "README.md", "markdown*", "notebooks*", "insp", "admonitions-test.ipynb", ".venv"]
 
 sphinx:
   config:
