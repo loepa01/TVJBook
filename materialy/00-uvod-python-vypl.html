@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,8 +57,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materialy/00-uvod-python-vypl';</script>
     <link rel="icon" href="../_static/cphys2.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -504,7 +502,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="uvod-do-jazyka-python">
+  <section id="uvod-do-jazyka-python">
 <h1>Úvod do jazyka Python<a class="headerlink" href="#uvod-do-jazyka-python" title="Link to this heading">#</a></h1>
 <p>Tato přednáška přestavuje stručný úvod do programovacího jazyka Python. Probrány jsou jak základní tak pokročilejší nástroje, které budou používány po zbytek kurzu. Pro zájemce o hlubší porozumění Pythonu doporučuji kurz <a class="reference external" href="https://fjfi.pythonic.eu/">Vědecké programování v Pythonu</a> (12PYTH), ze kterého tato přednáška čerpá.</p>
 <p>Další užitečný kurz v češtině je například od <a class="reference external" href="https://naucse.python.cz/course/pyladies/">Pyladies</a>.</p>
@@ -2055,7 +2053,7 @@ size: 4 dim: 2
 <section id="d-plot">
 <h3>1D plot<a class="headerlink" href="#d-plot" title="Link to this heading">#</a></h3>
 <p><strong>Možnost 1 - vykreslování ala Matlab</strong></p>
-<p>Vygenerujeme <span class="math notranslate nohighlight">\(x\)</span> a <span class="math notranslate nohighlight">\(y\)</span> hodnoty pro funkci <code class="docutils literal notranslate"><span class="pre">sin()</span></code>:</p>
+<p>Vygenerujeme $x$ a $y$ hodnoty pro funkci <code class="docutils literal notranslate"><span class="pre">sin()</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
@@ -2158,14 +2156,14 @@ Přidáme popisky os pomocí <code class="docutils literal notranslate"><span cl
 </section>
 <section id="id1">
 <h3>2D plot<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>Mějme funkci <span class="math notranslate nohighlight">\(z(x,y)\)</span>, která závisí na dvou proměnných:
-<span class="math notranslate nohighlight">\(
+<p>Mějme funkci $z(x,y)$, která závisí na dvou proměnných:
+$
 \begin{equation}
 z(x,y)=\exp(-\sqrt{x^2+y^2})\cos(2x)\sin(2y),
 \end{equation}
-\)</span>
+$
 a vykreslíme její závislost v 2D grafu.</p>
-<p>Vytvoříme mřížku <span class="math notranslate nohighlight">\(x\times y\)</span> pomocí funkce <code class="docutils literal notranslate"><span class="pre">meshgrid()</span></code>:</p>
+<p>Vytvoříme mřížku $x\times y$ pomocí funkce <code class="docutils literal notranslate"><span class="pre">meshgrid()</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">osa_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
@@ -2175,7 +2173,7 @@ a vykreslíme její závislost v 2D grafu.</p>
 </div>
 </div>
 </div>
-<p>Spočítáme hodnoty funkce <span class="math notranslate nohighlight">\(z(x,y)\)</span>:</p>
+<p>Spočítáme hodnoty funkce $z(x,y)$:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">y</span><span class="p">)</span>
@@ -2286,9 +2284,9 @@ a vykreslíme její závislost v 2D grafu.</p>
 </div>
 <p><strong>Soustava lineárních rovnic</strong></p>
 <p>Řešíme soustavu lineárních rovnic:
-<span class="math notranslate nohighlight">\(
+$
 \mathbb{A} \vec{x} = \vec{b}
-\)</span></p>
+$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">]])</span>
@@ -2305,7 +2303,7 @@ a vykreslíme její závislost v 2D grafu.</p>
 </div>
 </div>
 </div>
-<p>Řešení přes inverzi matice <span class="math notranslate nohighlight">\(\mathbb{A}^{-1}\)</span>:</p>
+<p>Řešení přes inverzi matice $\mathbb{A}^{-1}$:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Ainv</span> <span class="o">=</span> <span class="n">la</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># inverze matice A</span>

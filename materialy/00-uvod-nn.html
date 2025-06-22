@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,8 +57,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'materialy/00-uvod-nn';</script>
     <link rel="icon" href="../_static/cphys2.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -470,18 +468,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="uvod-do-neuronovych-siti">
+  <section id="uvod-do-neuronovych-siti">
 <h1>Úvod do neuronových sítí<a class="headerlink" href="#uvod-do-neuronovych-siti" title="Link to this heading">#</a></h1>
 <section id="perceptron">
 <h2>Perceptron<a class="headerlink" href="#perceptron" title="Link to this heading">#</a></h2>
-<p>Demo: <a class="reference external" href="https://playground.tensorflow.org/">https://playground.tensorflow.org/</a></p>
+<p>Demo: https://playground.tensorflow.org/</p>
 <p>TODO: nejaky jednoduchy priklad - viz demo ? + 1 jiny realny ?</p>
 <p>TODO: zpusob trenovani NN !!</p>
 <p>TODO: batche, ruzne optim., dropout, learning rate,</p>
 </section>
 <section id="konvolucni-neuronove-site">
 <h2>Konvoluční neuronové sítě<a class="headerlink" href="#konvolucni-neuronove-site" title="Link to this heading">#</a></h2>
-<p>Demo: <a class="reference external" href="https://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html">https://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html</a></p>
+<p>Demo: https://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html</p>
 <p>TODO: zde asi jen vysvetleni, teorie, parametry..</p>
 </section>
 <section id="one-hot-encoding">
@@ -501,7 +499,8 @@ document.write(`
 <li><p>The mouse chased the cat.</p></li>
 </ul>
 <p>Mění se délka sekvence - problém pro konvenční (feed-forward) NN architektury.</p>
-<img src="../images/mlp_on_text.png" alt="Problém s variabilní délkou sekvence pro MLP." width="1000"/>
+<a class="reference internal image-reference" href="../_images/mlp_on_text.png"><img alt="Problém s variabilní délkou sekvence pro MLP." src="../_images/mlp_on_text.png" style="width: 1000px;" />
+</a>
 <p><strong>Potřeba zakódovat informaci o pořadí slov (tokenů) přímo v architektuře neuronové sítě.</strong></p>
 <p>Rekurentní NN:</p>
 <ul class="simple">
@@ -512,7 +511,8 @@ document.write(`
 <li><p><em>Turing complete</em> = umožňují simulovat libovolný algoritmus! (při poskytnutí dostatku dat..)</p></li>
 <li><p><em>Backpropagation through time</em> - RNN se učí opakovanou backpropagací v čase</p></li>
 </ul>
-<img src="../images/rnn2.png" alt="Rekurentní neuronová síť" width="800"/>
+<a class="reference internal image-reference" href="../_images/rnn2.png"><img alt="Rekurentní neuronová síť" src="../_images/rnn2.png" style="width: 800px;" />
+</a>
 <p>Dvě možnosti pro text:</p>
 <ul class="simple">
 <li><p><em>word-level RNN</em> - jako token/prvek volíme slovo</p></li>
@@ -540,19 +540,22 @@ document.write(`
 </ul>
 <p>LSTM</p>
 <p>Jednoduché RNN si efektivně pamatují informaci pouze pro krátké řetězce (short-memory). LSTM architektura je vytvořená tak, aby prodloužila tuto “krátkou pamět” a umožnila efektivní učení vzájemných i pro dlouhé řetezce slov/tokenů.
-Je to dosaženo přidáním dalšího <em>long-term</em> skrytého stavu <span class="math notranslate nohighlight">\(c_t\)</span> spolu s mechanismem pomalého zapomínání a přidávání nové informace.</p>
-<img src="../images/lstm.png" alt="lstm" width="800"/>
+Je to dosaženo přidáním dalšího <em>long-term</em> skrytého stavu $c_t$ spolu s mechanismem pomalého zapomínání a přidávání nové informace.</p>
+<a class="reference internal image-reference" href="../_images/lstm.png"><img alt="lstm" src="../_images/lstm.png" style="width: 800px;" />
+</a>
 <p>GRU</p>
 <p>Podobná architektura jako LSTM, ale jiný mechanismus dlouhodobé paměti.</p>
-<img src="../images/gru.png" alt="gru" width="800"/></section>
+<a class="reference internal image-reference" href="../_images/gru.png"><img alt="gru" src="../_images/gru.png" style="width: 800px;" />
+</a>
+</section>
 <section id="zdroje">
 <h2>Zdroje<a class="headerlink" href="#zdroje" title="Link to this heading">#</a></h2>
 <p><em>Aggarwal - Neural Networks and Deep Learning</em></p>
-<p><a class="reference external" href="https://eclass.upatras.gr/modules/document/file.php/EE935/%CE%97%CE%BB%CE%B5%CE%BA%CF%84%CF%81%CE%BF%CE%BD%CE%B9%CE%BA%CE%AC%20%CE%92%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1/2018_Book_NeuralNetworksAndDeepLearning.pdf">https://eclass.upatras.gr/modules/document/file.php/EE935/Ηλεκτρονικά Βιβλία/2018_Book_NeuralNetworksAndDeepLearning.pdf</a></p>
+<p>https://eclass.upatras.gr/modules/document/file.php/EE935/%CE%97%CE%BB%CE%B5%CE%BA%CF%84%CF%81%CE%BF%CE%BD%CE%B9%CE%BA%CE%AC%20%CE%92%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1/2018_Book_NeuralNetworksAndDeepLearning.pdf</p>
 </section>
 <section id="kam-dal">
 <h2>Kam dál?<a class="headerlink" href="#kam-dal" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://cs.stanford.edu/people/karpathy/convnetjs/">https://cs.stanford.edu/people/karpathy/convnetjs/</a></p>
+<p>https://cs.stanford.edu/people/karpathy/convnetjs/</p>
 </section>
 </section>
 
