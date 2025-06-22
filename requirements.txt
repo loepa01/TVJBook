@@ -12,3 +12,5 @@ torchview
 pydot
 graphviz
 pandas
+
+tensorflow
