@@ -1,6 +1,6 @@
 # Miniprojekty TV@J 2025 - Neuronové sítě
 
-Tyto stránky obsahují materiály k miniprojektům na Týden vědy na Jaderce 2025.
+Tyto stránky obsahují materiály k miniprojektům probíhájícím na [Týdnu vědy na Jaderce](https://tydenvedy.fjfi.cvut.cz/) 2025.
 
 ## Časový plán
 * Pondělí (23.6.) 8:50 - 16:30
