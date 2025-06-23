@@ -14,39 +14,39 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,8 +110,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -139,6 +140,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -160,7 +163,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -202,7 +205,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -211,14 +214,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -243,14 +246,14 @@
       
       <li><a href="https://mybinder.org/v2/gh/loepa01/TVJBook/main?urlpath=lab/tree/miniprojekty/01-rozpoznavani-cislic.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -261,14 +264,14 @@
       
       <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/loepa01/TVJBook&urlpath=lab/tree/TVJBook/miniprojekty/01-rozpoznavani-cislic.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -279,14 +282,14 @@
       
       <li><a href="https://colab.research.google.com/github/loepa01/TVJBook/blob/main/miniprojekty/01-rozpoznavani-cislic.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -410,10 +413,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -421,14 +424,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -449,6 +452,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat">Příprava dat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-modelu">Konstrukce modelu</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp-model">MLP model</a></li>
@@ -479,12 +483,31 @@ document.write(`
                   
   <section id="rozpoznavani-cislic-pomoci-neuronovych-siti">
 <h1>Rozpoznávání číslic pomocí neuronových sítí<a class="headerlink" href="#rozpoznavani-cislic-pomoci-neuronovych-siti" title="Link to this heading">#</a></h1>
+<section id="ukoly">
+<h2>Úkoly<a class="headerlink" href="#ukoly" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Seznámení s datasetem</p></li>
+<li><p>Vykreslit histogram počtu jednotlivých číslic v datasetu</p></li>
+<li><p>Konstrukce modelu I - MLP (více vrstvý perceptron)</p></li>
+<li><p>Vylepšení pomocí pokročilých technik učení + ladění <em>hyperparametrů</em> (learning rate, epochy, batch size, počet skrytých neuronů, dropout)</p></li>
+<li><p>Konstrukce modelu II - přidání konvolučních vrstev</p></li>
+<li><p>Vylepšení pomocí pokročilých technik učení + ladění <em>hyperparametrů</em> (learning rate, epochy, batch size, počet skrytých neuronů, dropout)</p></li>
+<li><p>Srovnání MLP vs ConvNet</p></li>
+<li><p>Analýza vah konvolučních vrstev, interpretace aktivací neuronů a chybné případy (závěr notebooku)</p></li>
+<li><p>Cíl: &gt;99% přesnost na testovacích datech</p></li>
+</ol>
+<p>Bonusy:</p>
+<ol class="arabic simple" start="0">
+<li><p>zvýšení přesnosti na 99.9 %</p></li>
+<li><p>jiný dataset: MNIST Fashion?, …</p></li>
+<li><p>kreslící appka?</p></li>
+</ol>
 <p>!pip install -r requirements.txt</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">torch</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
 </pre></div>
 </div>
 </div>
@@ -494,11 +517,6 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make device agnostic code</span>
 <span class="n">device</span> <span class="o">=</span> <span class="s2">&quot;cuda&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span>
 <span class="n">device</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;cuda&#39;
 </pre></div>
 </div>
 </div>
@@ -516,25 +534,16 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>device(type=&#39;cuda&#39;)
-</pre></div>
 </div>
-</div>
-</div>
+</section>
 <section id="priprava-dat">
 <h2>Příprava dat<a class="headerlink" href="#priprava-dat" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">torchvision.datasets</span> <span class="kn">import</span> <span class="n">MNIST</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">torchvision.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">MNIST</span>
 
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">MNIST</span><span class="p">(</span><span class="n">root</span> <span class="o">=</span> <span class="s1">&#39;datasets/&#39;</span><span class="p">,</span> <span class="n">download</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>60000
 </pre></div>
 </div>
 </div>
@@ -558,8 +567,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/057260b978e5e3fb842c1eaf2fd6958ea18510c506b0d6cf01da5be2a30b9fec.png" src="../_images/057260b978e5e3fb842c1eaf2fd6958ea18510c506b0d6cf01da5be2a30b9fec.png" />
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># DOPLNIT: histogram (krok 2)</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -574,11 +587,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Train size: 48000, Test size: 12000
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -589,7 +597,7 @@ document.write(`
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Add channel dimension</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>    <span class="c1"># Add channel dimension</span>
 
-<span class="k">def</span> <span class="nf">to_categorical</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">to_categorical</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot; 1-hot encodes a tensor &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="n">num_classes</span><span class="p">)[</span><span class="n">y</span><span class="p">]</span><span class="o">.</span><span class="n">float</span><span class="p">()</span>
 
@@ -608,11 +616,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>torch.Size([48000, 1, 28, 28])
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -620,61 +623,39 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(tensor([0., 0., 0., 0., 0., 1., 0., 0., 0., 0.]), torch.Size([48000, 10]))
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="konstrukce-modelu">
 <h2>Konstrukce modelu<a class="headerlink" href="#konstrukce-modelu" title="Link to this heading">#</a></h2>
+<p>Návody:</p>
+<p>https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html</p>
+<p>https://docs.pytorch.org/tutorials/beginner/introyt/modelsyt_tutorial.html</p>
 <section id="mlp-model">
 <h3>MLP model<a class="headerlink" href="#mlp-model" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nn</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.optim</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">optim</span>
 
 <span class="n">input_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>  <span class="c1"># (channels, height, width)</span>
 
-<span class="n">hidden_size</span> <span class="o">=</span> <span class="mi">64</span>  <span class="c1"># Example hidden layer size</span>
+<span class="n">hidden_size</span> <span class="o">=</span> <span class="err">?</span>  <span class="c1"># Example hidden layer size</span>
 
 <span class="n">num_classes</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1"># Define the CNN model</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
-    <span class="c1">#nn.Softmax(dim=0)  # Softmax for multi-class classification</span>
+    
+    <span class="c1"># DOPLNIT: konstrukce modelu</span>
+    
 <span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="o">?</span>
+
 <span class="c1"># loss function and optimizer</span>
 <span class="n">loss_fn</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>  <span class="c1"># cross entropy</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sequential(
-  (0): Flatten(start_dim=1, end_dim=-1)
-  (1): Linear(in_features=784, out_features=64, bias=True)
-  (2): ReLU()
-  (3): Dropout(p=0.2, inplace=False)
-  (4): Linear(in_features=64, out_features=20, bias=True)
-  (5): ReLU()
-  (6): Dropout(p=0.2, inplace=False)
-  (7): Linear(in_features=20, out_features=10, bias=True)
-  (8): ReLU()
-)
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -684,95 +665,44 @@ document.write(`
 <h3>CNN model<a class="headerlink" href="#cnn-model" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nn</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.optim</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">optim</span>
 
 <span class="n">input_size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>  <span class="c1"># (channels, height, width)</span>
 
-<span class="n">kernel_size</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">kernel_size</span> <span class="o">=</span> <span class="o">?</span>
 <span class="n">padding</span> <span class="o">=</span> <span class="n">kernel_size</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># Padding to keep the output size same as input size</span>
 
-<span class="n">channels_1</span> <span class="o">=</span> <span class="mi">64</span>
-<span class="n">channels_2</span> <span class="o">=</span> <span class="mi">128</span>
+<span class="n">channels_1</span> <span class="o">=</span> <span class="o">?</span>
+<span class="n">channels_2</span> <span class="o">=</span> <span class="o">?</span>
 
-<span class="n">kernel_size_pool</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">stride_pool</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">kernel_size_pool</span> <span class="o">=</span> <span class="o">?</span>
+<span class="n">stride_pool</span> <span class="o">=</span> <span class="o">?</span>
 
 <span class="n">num_classes</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1"># Define the CNN model</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="n">kernel_size</span><span class="p">,</span> <span class="n">in_channels</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">out_channels</span><span class="o">=</span><span class="n">channels_1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="n">padding</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="n">kernel_size_pool</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="n">stride_pool</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="n">kernel_size</span><span class="p">,</span> <span class="n">in_channels</span><span class="o">=</span><span class="n">channels_1</span><span class="p">,</span> <span class="n">out_channels</span><span class="o">=</span><span class="n">channels_2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="n">padding</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="n">kernel_size_pool</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="n">stride_pool</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(),</span>  <span class="c1"># Flatten the output for the fully connected layer</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span>
-    <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">((</span><span class="n">input_size</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="n">stride_pool</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">channels_2</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">),</span>
-    <span class="c1">#nn.ReLU(),</span>
-    <span class="c1">#nn.Linear(40, 10),</span>
-    <span class="c1">#nn.Softmax(dim=0)  # Softmax for multi-class classification</span>
+    
+    <span class="c1"># DOPLNIT: konstrukce modelu</span>
+    
 <span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="o">?</span>
+
 <span class="c1"># loss function and optimizer</span>
 <span class="n">loss_fn</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>  <span class="c1"># cross entropy</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sequential(
-  (0): Conv2d(1, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
-  (1): ReLU()
-  (2): MaxPool2d(kernel_size=3, stride=3, padding=0, dilation=1, ceil_mode=False)
-  (3): Dropout(p=0.4, inplace=False)
-  (4): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
-  (5): ReLU()
-  (6): MaxPool2d(kernel_size=3, stride=3, padding=0, dilation=1, ceil_mode=False)
-  (7): Flatten(start_dim=1, end_dim=-1)
-  (8): Dropout(p=0.4, inplace=False)
-  (9): Linear(in_features=1152, out_features=10, bias=True)
-)
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">torchsummary</span> <span class="kn">import</span> <span class="n">summary</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">torchsummary</span><span class="w"> </span><span class="kn">import</span> <span class="n">summary</span>
 
 <span class="n">summary</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_size</span><span class="o">=</span><span class="n">input_size</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1           [-1, 64, 28, 28]           1,664
-              ReLU-2           [-1, 64, 28, 28]               0
-         MaxPool2d-3             [-1, 64, 9, 9]               0
-           Dropout-4             [-1, 64, 9, 9]               0
-            Conv2d-5            [-1, 128, 9, 9]         204,928
-              ReLU-6            [-1, 128, 9, 9]               0
-         MaxPool2d-7            [-1, 128, 3, 3]               0
-           Flatten-8                 [-1, 1152]               0
-           Dropout-9                 [-1, 1152]               0
-           Linear-10                   [-1, 10]          11,530
-================================================================
-Total params: 218,122
-Trainable params: 218,122
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 1.03
-Params size (MB): 0.83
-Estimated Total Size (MB): 1.86
-----------------------------------------------------------------
 </pre></div>
 </div>
 </div>
@@ -785,10 +715,10 @@ Estimated Total Size (MB): 1.86
 <code class="docutils literal notranslate"><span class="pre">timeSince(timestamp)</span></code> function which returns a human readable string:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
-<span class="k">def</span> <span class="nf">timeSince</span><span class="p">(</span><span class="n">since</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">timeSince</span><span class="p">(</span><span class="n">since</span><span class="p">):</span>
     <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">now</span> <span class="o">-</span> <span class="n">since</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">s</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span>
@@ -801,7 +731,7 @@ Estimated Total Size (MB): 1.86
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate accuracy (a classification metric)</span>
-<span class="k">def</span> <span class="nf">accuracy_fn</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">accuracy_fn</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
     <span class="n">y_true</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Convert one-hot encoded labels to class indices</span>
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Convert model outputs to class indices</span>
     <span class="n">correct</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">()</span> <span class="c1"># torch.eq() calculates where two tensors are equal</span>
@@ -813,8 +743,8 @@ Estimated Total Size (MB): 1.86
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># number of epochs to run</span>
-<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>  <span class="c1"># size of each batch</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="err">?</span>    <span class="c1"># number of epochs to run</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="err">?</span>  <span class="c1"># size of each batch</span>
 <span class="n">batches_per_epoch</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span> <span class="o">//</span> <span class="n">batch_size</span>
 
 <span class="n">loss_array</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># to store loss values</span>
@@ -870,34 +800,10 @@ Estimated Total Size (MB): 1.86
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0m 0s | Epoch: 1 | Loss: 0.07458, Accuracy: 98.05% | Test loss: 0.08735, Test acc: 97.54%
-0m 1s | Epoch: 2 | Loss: 0.04716, Accuracy: 98.44% | Test loss: 0.06026, Test acc: 98.28%
-0m 2s | Epoch: 3 | Loss: 0.05926, Accuracy: 98.83% | Test loss: 0.05016, Test acc: 98.53%
-0m 4s | Epoch: 4 | Loss: 0.04147, Accuracy: 99.22% | Test loss: 0.04631, Test acc: 98.69%
-0m 5s | Epoch: 5 | Loss: 0.03244, Accuracy: 99.22% | Test loss: 0.04016, Test acc: 98.78%
-0m 5s | Epoch: 6 | Loss: 0.03042, Accuracy: 99.22% | Test loss: 0.03648, Test acc: 98.97%
-0m 6s | Epoch: 7 | Loss: 0.02880, Accuracy: 98.83% | Test loss: 0.03863, Test acc: 98.80%
-0m 7s | Epoch: 8 | Loss: 0.02011, Accuracy: 98.83% | Test loss: 0.03337, Test acc: 99.02%
-0m 8s | Epoch: 9 | Loss: 0.02584, Accuracy: 98.83% | Test loss: 0.03451, Test acc: 98.99%
-0m 9s | Epoch: 10 | Loss: 0.00603, Accuracy: 100.00% | Test loss: 0.03152, Test acc: 98.97%
-0m 10s | Epoch: 11 | Loss: 0.03485, Accuracy: 98.83% | Test loss: 0.02893, Test acc: 99.15%
-0m 11s | Epoch: 12 | Loss: 0.01401, Accuracy: 99.22% | Test loss: 0.02852, Test acc: 99.16%
-0m 13s | Epoch: 13 | Loss: 0.02479, Accuracy: 99.22% | Test loss: 0.02663, Test acc: 99.11%
-0m 13s | Epoch: 14 | Loss: 0.02688, Accuracy: 99.22% | Test loss: 0.02919, Test acc: 99.12%
-0m 14s | Epoch: 15 | Loss: 0.01309, Accuracy: 99.61% | Test loss: 0.02491, Test acc: 99.23%
-0m 15s | Epoch: 16 | Loss: 0.01312, Accuracy: 99.61% | Test loss: 0.02560, Test acc: 99.23%
-0m 16s | Epoch: 17 | Loss: 0.00635, Accuracy: 100.00% | Test loss: 0.02559, Test acc: 99.31%
-0m 17s | Epoch: 18 | Loss: 0.00660, Accuracy: 99.61% | Test loss: 0.02446, Test acc: 99.29%
-0m 18s | Epoch: 19 | Loss: 0.00416, Accuracy: 100.00% | Test loss: 0.02355, Test acc: 99.28%
-0m 19s | Epoch: 20 | Loss: 0.00789, Accuracy: 99.61% | Test loss: 0.02404, Test acc: 99.31%
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">running_mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">running_mean</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
     <span class="n">cumsum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> 
     <span class="n">r_avg</span> <span class="o">=</span> <span class="p">(</span><span class="n">cumsum</span><span class="p">[</span><span class="n">N</span><span class="p">:]</span> <span class="o">-</span> <span class="n">cumsum</span><span class="p">[:</span><span class="o">-</span><span class="n">N</span><span class="p">])</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
     <span class="n">res</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
@@ -952,11 +858,6 @@ Estimated Total Size (MB): 1.86
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 99.31%
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -976,16 +877,16 @@ Estimated Total Size (MB): 1.86
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/f51c7eaf7f98c9487efac648101143ce1ce2b1e18de1c3fe2053d6dd2f01e28e.png" src="../_images/f51c7eaf7f98c9487efac648101143ce1ce2b1e18de1c3fe2053d6dd2f01e28e.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 
 <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">%H%M%S&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;results&#39;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="sa">f</span><span class="s1">&#39;results/model_mnist_cnn_</span><span class="si">{</span><span class="n">dt</span><span class="si">}</span><span class="s1">.pth&#39;</span><span class="p">)</span>
 </pre></div>
@@ -1007,10 +908,11 @@ Estimated Total Size (MB): 1.86
 </section>
 <section id="vizualizace">
 <h2>Vizualizace<a class="headerlink" href="#vizualizace" title="Link to this heading">#</a></h2>
+<p>!pip install torchview</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">torchviz</span> <span class="kn">import</span> <span class="n">make_dot</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">torchviz</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_dot</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PATH&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">os</span><span class="o">.</span><span class="n">pathsep</span> <span class="o">+</span> <span class="s1">&#39;C:/Program Files/Graphviz/bin/&#39;</span>
 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Get predictions for the first training sample</span>
@@ -1019,24 +921,17 @@ Estimated Total Size (MB): 1.86
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;cnn_torchviz.png&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision</span>
-<span class="kn">from</span> <span class="nn">torchview</span> <span class="kn">import</span> <span class="n">draw_graph</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torchvision</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">torchview</span><span class="w"> </span><span class="kn">import</span> <span class="n">draw_graph</span>
 
 <span class="n">model_graph</span> <span class="o">=</span> <span class="n">draw_graph</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">),</span> <span class="n">expand_nested</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
 <span class="n">model_graph</span><span class="o">.</span><span class="n">visual_graph</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/785864cbda26080f6d16f735819d6cdec32168c1d92c459b26bbe6ee50209adf.svg" src="../_images/785864cbda26080f6d16f735819d6cdec32168c1d92c459b26bbe6ee50209adf.svg" /></div>
 </div>
 <section id="vahy-konvolucnich-vrstev">
 <h3>Váhy konvolučních vrstev<a class="headerlink" href="#vahy-konvolucnich-vrstev" title="Link to this heading">#</a></h3>
@@ -1048,12 +943,6 @@ Estimated Total Size (MB): 1.86
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
         <span class="n">weight_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">weight</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>torch.Size([64, 1, 5, 5])
-torch.Size([128, 64, 5, 5])
 </pre></div>
 </div>
 </div>
@@ -1072,9 +961,6 @@ torch.Size([128, 64, 5, 5])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/5993a6fea95a25e5a9a4d610112edddca05e2295b253fcbbc96bb08dc414319e.png" src="../_images/5993a6fea95a25e5a9a4d610112edddca05e2295b253fcbbc96bb08dc414319e.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1091,9 +977,6 @@ torch.Size([128, 64, 5, 5])
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/bd6263b54a859d1dad06963393401d6c56d5625db09381dc6a029b60470e9f02.png" src="../_images/bd6263b54a859d1dad06963393401d6c56d5625db09381dc6a029b60470e9f02.png" />
 </div>
 </div>
 </section>
@@ -1116,17 +999,14 @@ torch.Size([128, 64, 5, 5])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/d34d8adec6176095e61c94c60bf81e024e62c5a2af103478a6973f4ad8bfd6e3.png" src="../_images/d34d8adec6176095e61c94c60bf81e024e62c5a2af103478a6973f4ad8bfd6e3.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conv2d_layers</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">modules</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">)]</span>
 
 <span class="n">activation</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">def</span> <span class="nf">get_activation</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">hook</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_activation</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hook</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
         <span class="n">activation</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">hook</span>
 
@@ -1139,13 +1019,6 @@ torch.Size([128, 64, 5, 5])
 
 <span class="nb">print</span><span class="p">(</span><span class="n">activation</span><span class="p">[</span><span class="s1">&#39;cnv1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">activation</span><span class="p">[</span><span class="s1">&#39;cnv2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Predicted label: 4, True label: 4
-torch.Size([1, 64, 28, 28])
-torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
@@ -1164,9 +1037,6 @@ torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/f748cae0ef54a981389dc1deab9702b55c925812d55d4e48363a0d828423817b.png" src="../_images/f748cae0ef54a981389dc1deab9702b55c925812d55d4e48363a0d828423817b.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1181,9 +1051,6 @@ torch.Size([1, 128, 9, 9])
 <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Activation Maps for cnv2&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">);</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/996cba8f527992f16c3c203946f5ee2526f7cde24f893cc03b528754b76fe64c.png" src="../_images/996cba8f527992f16c3c203946f5ee2526f7cde24f893cc03b528754b76fe64c.png" />
 </div>
 </div>
 </section>
@@ -1230,18 +1097,13 @@ torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(64, 28, 28, 10)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">activ_cnv1_num</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">activ_cnv1_stats</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Get the index of the maximum value along the last axis (num_classes)</span>
 <span class="c1">#print(activ_cnv1_num[1, :, :])</span>
 
-<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
 
 <span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;tab10&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># Use a colormap with 10 distinct colors</span>
 
@@ -1264,9 +1126,6 @@ torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/5eaaf491abacce8c67dc632f66575c6548775924b1afeb640e75dff147cb7478.png" src="../_images/5eaaf491abacce8c67dc632f66575c6548775924b1afeb640e75dff147cb7478.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1287,9 +1146,6 @@ torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/24633e232b2c45c3c1ab54027269299cd9aea46fbe4f0cfc6ada500c823dccd7.png" src="../_images/24633e232b2c45c3c1ab54027269299cd9aea46fbe4f0cfc6ada500c823dccd7.png" />
-</div>
 </div>
 </section>
 <section id="chybne-klasifikace">
@@ -1308,7 +1164,7 @@ torch.Size([1, 128, 9, 9])
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">draw_output</span><span class="p">(</span><span class="n">idx_nums</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">draw_output</span><span class="p">(</span><span class="n">idx_nums</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">idx_nums</span><span class="p">)))</span>
@@ -1346,12 +1202,6 @@ torch.Size([1, 128, 9, 9])
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>83 samples are misclassified
-</pre></div>
-</div>
-<img alt="../_images/95aea2727fab476803c6ea7d4b5aced649aa6015f36f44785495254801b4a59a.png" src="../_images/95aea2727fab476803c6ea7d4b5aced649aa6015f36f44785495254801b4a59a.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1378,9 +1228,6 @@ torch.Size([1, 128, 9, 9])
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/0e6e7caed049b9e5dd729142d519dc0e9c8259eaacb91d94ff8a25cecae32345.png" src="../_images/0e6e7caed049b9e5dd729142d519dc0e9c8259eaacb91d94ff8a25cecae32345.png" />
 </div>
 </div>
 </section>
@@ -1418,7 +1265,7 @@ torch.Size([1, 128, 9, 9])
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1455,6 +1302,7 @@ torch.Size([1, 128, 9, 9])
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat">Příprava dat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-modelu">Konstrukce modelu</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp-model">MLP model</a></li>
@@ -1520,8 +1368,8 @@ By Jiří Löffelmann
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

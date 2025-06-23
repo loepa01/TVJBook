@@ -14,39 +14,39 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -71,27 +71,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -113,8 +109,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -138,6 +139,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -159,7 +162,7 @@
 
  <script>
  document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
     <span class="search-button__default-text">Search</span>
     <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -201,7 +204,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -210,14 +213,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -242,14 +245,14 @@
       
       <li><a href="https://mybinder.org/v2/gh/loepa01/TVJBook/main?urlpath=lab/tree/miniprojekty/02-small-scale-chatgpt.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -260,14 +263,14 @@
       
       <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/loepa01/TVJBook&urlpath=lab/tree/TVJBook/miniprojekty/02-small-scale-chatgpt.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onJupyterHub"
+   title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_jupyterhub.svg">
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
   </span>
 <span class="btn__text-container">JupyterHub</span>
 </a>
@@ -278,14 +281,14 @@
       
       <li><a href="https://colab.research.google.com/github/loepa01/TVJBook/blob/main/miniprojekty/02-small-scale-chatgpt.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -409,10 +412,10 @@
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -420,14 +423,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -449,6 +452,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Small-scale ChatGPT - generování textu pomocí neuronových sítí</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-i">Příprava dat I</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-ii">Příprava dat II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-neuronove-site">Konstrukce neuronové sítě</a></li>
@@ -462,7 +466,6 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-the-losses">Plotting the Losses</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vzorkovani-natrenovane-rnn">Vzorkování natrénováné RNN</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace">Vizualizace</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ulohy">Úlohy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zdroje">Zdroje</a></li>
 </ul>
 </li>
@@ -480,6 +483,25 @@ document.write(`
                   
   <section id="small-scale-chatgpt-generovani-textu-pomoci-neuronovych-siti">
 <h1>2. Small-scale ChatGPT - generování textu pomocí neuronových sítí<a class="headerlink" href="#small-scale-chatgpt-generovani-textu-pomoci-neuronovych-siti" title="Link to this heading">#</a></h1>
+<section id="ukoly">
+<h2>Úkoly<a class="headerlink" href="#ukoly" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Seznámení s datasety - jména ČR (můž, žena, neutrál), různé státy</p></li>
+<li><p>Vykreslit histogram délek jmen</p></li>
+<li><p>Konstrukce rekureního modelu</p>
+<ul class="simple">
+<li><p>vyzkoušet: různé aktivační funkce, learning rate, počet rekurentních bloků, počet skrytých neuronů</p></li>
+</ul>
+</li>
+<li><p>Přidání teploty - ovlivnění výstupu, jak moc si NN vymýšlí</p></li>
+<li><p>Přidání prvního znaku - NN bude generovat sama i první znak jména</p></li>
+<li><p>Cíl: Rozumně vypadající vygenerovaná jména.</p></li>
+</ol>
+<p>Bonusy:</p>
+<ol class="arabic simple">
+<li><p>Jiný dataset - CZ jména, jiná národnost, pouze muž/žena</p></li>
+<li><p>LSTM, GRU ?</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For tips on running notebooks in Google Colab, see</span>
@@ -492,9 +514,9 @@ document.write(`
 <p>!pip install -r requirements.txt</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">torch</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
 </pre></div>
 </div>
 </div>
@@ -526,12 +548,8 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>device(type=&#39;cpu&#39;)
-</pre></div>
 </div>
-</div>
-</div>
+</section>
 <section id="priprava-dat-i">
 <h2>Příprava dat I<a class="headerlink" href="#priprava-dat-i" title="Link to this heading">#</a></h2>
 <p>Databáze evropských jmen a příjmení: https://data.europa.eu/data/datasets/5bc35259634f41122d982759?locale=cs</p>
@@ -544,8 +562,8 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -573,11 +591,6 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>((11172,), (11172,))
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -585,17 +598,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;AADAR&#39;, &#39;AAGTE&#39;, &#39;AAI&#39;, &#39;AAIKE&#39;, &#39;AAJARAQ&#39;, &#39;AAJU&#39;, &#39;AAJUNNGUAQ&#39;,
-       &#39;AAKA&#39;, &#39;AAKKULUK&#39;, &#39;AAL&#39;, &#39;AALIYAH&#39;], dtype=object)
-</pre></div>
-</div>
-</div>
 </div>
 <p>Vyčištění speciálních znaků</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
 
 <span class="n">jmena_all2</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -618,24 +625,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11172
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">names_length</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Délka jména&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Počet&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram delék jmen&#39;</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># DOPLNIT: histogram (krok 2)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/02f4faa4fc2af4c48ce4d76ae6761349e69806bedb2354b95eda89b749db7154.png" src="../_images/02f4faa4fc2af4c48ce4d76ae6761349e69806bedb2354b95eda89b749db7154.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -666,28 +661,18 @@ document.write(`
 </div>
 </div>
 <p>EOS = ‘\n’, START = ‘$’</p>
-<a class="reference internal image-reference" href="../_images/names.png"><img alt="Rekurentní neuronová síť" src="../_images/names.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/names.png"><img alt="Rekurentní neuronová síť" src="../_images/names.png" style="width: 800px;" />
+</a>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The unique characters in the file</span>
 <span class="n">vocab</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">jmena_all2</span><span class="p">))))</span>
 
 <span class="c1"># insert special starting character</span>
-<span class="n">vocab</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">)</span>
+<span class="c1">#vocab = np.append(vocab,&#39;$&#39;)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">vocab</span><span class="p">)</span><span class="si">}</span><span class="s1"> unique characters&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">vocab</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>102 unique characters
-[&#39;A&#39; &#39;B&#39; &#39;C&#39; &#39;D&#39; &#39;E&#39; &#39;F&#39; &#39;G&#39; &#39;H&#39; &#39;I&#39; &#39;J&#39; &#39;K&#39; &#39;L&#39; &#39;M&#39; &#39;N&#39; &#39;O&#39; &#39;P&#39; &#39;Q&#39; &#39;R&#39;
- &#39;S&#39; &#39;T&#39; &#39;U&#39; &#39;V&#39; &#39;W&#39; &#39;X&#39; &#39;Y&#39; &#39;Z&#39; &#39;a&#39; &#39;b&#39; &#39;c&#39; &#39;d&#39; &#39;e&#39; &#39;f&#39; &#39;g&#39; &#39;h&#39; &#39;i&#39; &#39;j&#39;
- &#39;k&#39; &#39;l&#39; &#39;m&#39; &#39;n&#39; &#39;o&#39; &#39;p&#39; &#39;q&#39; &#39;r&#39; &#39;s&#39; &#39;t&#39; &#39;u&#39; &#39;v&#39; &#39;w&#39; &#39;x&#39; &#39;y&#39; &#39;z&#39; &#39;Á&#39; &#39;Ç&#39;
- &#39;É&#39; &#39;Í&#39; &#39;Ó&#39; &#39;Ö&#39; &#39;Ü&#39; &#39;á&#39; &#39;â&#39; &#39;ä&#39; &#39;æ&#39; &#39;ç&#39; &#39;é&#39; &#39;ë&#39; &#39;í&#39; &#39;ï&#39; &#39;ó&#39; &#39;ô&#39; &#39;ö&#39; &#39;ø&#39;
- &#39;ú&#39; &#39;û&#39; &#39;ü&#39; &#39;ý&#39; &#39;Ć&#39; &#39;Č&#39; &#39;č&#39; &#39;ď&#39; &#39;ě&#39; &#39;Ľ&#39; &#39;ľ&#39; &#39;Ł&#39; &#39;ł&#39; &#39;ň&#39; &#39;Ř&#39; &#39;ř&#39; &#39;Ş&#39; &#39;ş&#39;
- &#39;Š&#39; &#39;š&#39; &#39;Ť&#39; &#39;ť&#39; &#39;ů&#39; &#39;ű&#39; &#39;ź&#39; &#39;ż&#39; &#39;Ž&#39; &#39;ž&#39; &#39;ʼ&#39; &#39;$&#39;]
 </pre></div>
 </div>
 </div>
@@ -701,31 +686,11 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÇÉÍÓÖÜáâäæçéëíïóôöøúûüýĆČčďěĽľŁłňŘřŞşŠšŤťůűźżŽžʼ$&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">names_all</span> <span class="o">=</span> <span class="n">jmena_all2</span>
 <span class="n">names_all</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">names_all</span><span class="p">[::</span><span class="mi">180</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>((11153,),
- array([&#39;Aadar&#39;, &#39;Agamjot&#39;, &#39;Aldis&#39;, &#39;Amal&#39;, &#39;Anett&#39;, &#39;Arden&#39;, &#39;Atala&#39;,
-        &#39;Bahşi&#39;, &#39;Betka&#39;, &#39;Brian&#39;, &#39;Cevin&#39;, &#39;Corwin&#39;, &#39;Darjan&#39;, &#39;Dion&#39;,
-        &#39;Dětřich&#39;, &#39;Eliakim&#39;, &#39;Emlyn&#39;, &#39;Ethni&#39;, &#39;Feza&#39;, &#39;Gaby&#39;, &#39;Gisel&#39;,
-        &#39;Hadar&#39;, &#39;Helmke&#39;, &#39;Ibolya&#39;, &#39;Ingrit&#39;, &#39;Jackson&#39;, &#39;Jennifer&#39;,
-        &#39;Josia&#39;, &#39;Kamelia&#39;, &#39;Kerry&#39;, &#39;Krischna&#39;, &#39;Laurent&#39;, &#39;Lieselotta&#39;,
-        &#39;Louis&#39;, &#39;Maaqujuk&#39;, &#39;Marcos&#39;, &#39;Matia&#39;, &#39;Merlijn&#39;, &#39;Mirabai&#39;,
-        &#39;Mália&#39;, &#39;Nathanyel&#39;, &#39;Nikoletta&#39;, &#39;Ofir&#39;, &#39;Otýlie&#39;, &#39;Phan&#39;,
-        &#39;Radouš&#39;, &#39;Renja&#39;, &#39;Rose&#39;, &#39;Saku&#39;, &#39;Selma&#39;, &#39;Sies&#39;, &#39;Sora&#39;,
-        &#39;Svetislav&#39;, &#39;Tavi&#39;, &#39;Tierra&#39;, &#39;Tsjip&#39;, &#39;Uwe&#39;, &#39;Viki&#39;, &#39;Věněk&#39;,
-        &#39;Yarlik&#39;, &#39;Zayden&#39;, &#39;Émilie&#39;], dtype=&#39;&lt;U18&#39;))
 </pre></div>
 </div>
 </div>
@@ -736,20 +701,20 @@ document.write(`
 <p>Databáze jmen z různých států: https://docs.pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="nb">open</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">unicodedata</span>
-<span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">io</span><span class="w"> </span><span class="kn">import</span> <span class="nb">open</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">unicodedata</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">all_letters</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="s2">&quot; .,;&#39;-&quot;</span>
 <span class="n">n_letters</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_letters</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Plus EOS marker</span>
 
-<span class="k">def</span> <span class="nf">findFiles</span><span class="p">(</span><span class="n">path</span><span class="p">):</span> <span class="k">return</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">findFiles</span><span class="p">(</span><span class="n">path</span><span class="p">):</span> <span class="k">return</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 
 <span class="c1"># Turn a Unicode string to plain ASCII, thanks to https://stackoverflow.com/a/518232/2809427</span>
-<span class="k">def</span> <span class="nf">unicodeToAscii</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unicodeToAscii</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
         <span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s1">&#39;NFD&#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">category</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;Mn&#39;</span>
@@ -757,7 +722,7 @@ document.write(`
     <span class="p">)</span>
 
 <span class="c1"># Read a file and split into lines</span>
-<span class="k">def</span> <span class="nf">readLines</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">readLines</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">some_file</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">[</span><span class="n">unicodeToAscii</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">some_file</span><span class="p">]</span>
 
@@ -789,26 +754,12 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total names count: 20074
-# categories: 18 [&#39;Japanese&#39;, &#39;English&#39;, &#39;Chinese&#39;, &#39;Portuguese&#39;, &#39;Polish&#39;, &#39;Irish&#39;, &#39;Korean&#39;, &#39;French&#39;, &#39;Scottish&#39;, &#39;Dutch&#39;, &#39;Russian&#39;, &#39;Italian&#39;, &#39;Arabic&#39;, &#39;Spanish&#39;, &#39;Greek&#39;, &#39;Vietnamese&#39;, &#39;Czech&#39;, &#39;German&#39;]
-O&#39;Neal
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">names_length</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Délka jména&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Počet&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram delék jmen&#39;</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># DOPLNIT: histogram (krok 2)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/1d3837333f78ca3dd1bc4a9e3e0aecabe7f8cf7660e8e02dfdd8ec2c8c6e335b.png" src="../_images/1d3837333f78ca3dd1bc4a9e3e0aecabe7f8cf7660e8e02dfdd8ec2c8c6e335b.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -817,90 +768,48 @@ O&#39;Neal
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .,;&#39;-&quot;
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="konstrukce-neuronove-site">
 <h2>Konstrukce neuronové sítě<a class="headerlink" href="#konstrukce-neuronove-site" title="Link to this heading">#</a></h2>
+<p>Návod: https://docs.pytorch.org/tutorials/beginner/introyt/modelsyt_tutorial.html</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">torch.nn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nn</span>
 
-<span class="k">class</span> <span class="nc">RNN</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RNN</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">RNN</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">hidden_size</span> <span class="o">=</span> <span class="n">hidden_size</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">i2h</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">h2h</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">hidden_size</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">h2o</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>
-        <span class="c1">#self.relu = nn.ReLU()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dropout</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">softmax</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LogSoftmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># DOPLNIT: inicializace vrstev</span>
 
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>        
-        <span class="n">embedding</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">i2h</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h2h</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">hidden</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h2o</span><span class="p">(</span><span class="n">embedding</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span><span class="p">)</span>
-        <span class="c1">#output = self.relu(output)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">output</span> <span class="o">/</span> <span class="n">temperature</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
+        
+        <span class="c1"># DOPLNIT: struktura RNN</span>
+        
         <span class="k">return</span> <span class="n">output</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span>
 
-    <span class="k">def</span> <span class="nf">initHidden</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">initHidden</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden_size</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
         
-<span class="n">n_hidden</span> <span class="o">=</span> <span class="mi">128</span>
+
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="o">?</span>
+<span class="n">n_hidden</span> <span class="o">=</span> <span class="err">?</span>  <span class="c1"># počet skrytých neuronů</span>
+
 <span class="n">rnn</span> <span class="o">=</span> <span class="n">RNN</span><span class="p">(</span><span class="n">n_letters</span><span class="p">,</span> <span class="n">n_hidden</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">rnn</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RNN(
-  (i2h): Linear(in_features=103, out_features=128, bias=True)
-  (h2h): Linear(in_features=128, out_features=128, bias=True)
-  (h2o): Linear(in_features=128, out_features=103, bias=True)
-  (dropout): Dropout(p=0.1, inplace=False)
-  (softmax): LogSoftmax(dim=1)
-)
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">torchsummary</span> <span class="kn">import</span> <span class="n">summary</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">torchsummary</span><span class="w"> </span><span class="kn">import</span> <span class="n">summary</span>
 
 <span class="n">rnn</span><span class="o">.</span><span class="n">initHidden</span><span class="p">()</span>
 <span class="n">summary</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">input_size</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n_letters</span><span class="p">),</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Linear-1               [-1, 1, 128]          13,312
-            Linear-2                  [-1, 128]          16,512
-            Linear-3               [-1, 1, 103]          13,287
-           Dropout-4               [-1, 1, 103]               0
-        LogSoftmax-5               [-1, 1, 103]               0
-================================================================
-Total params: 43,111
-Trainable params: 43,111
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.00
-Params size (MB): 0.16
-Estimated Total Size (MB): 0.17
-----------------------------------------------------------------
 </pre></div>
 </div>
 </div>
@@ -931,7 +840,7 @@ of initial hidden state or some other strategy.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># One-hot matrix of first to last letters (not including EOS) for input</span>
-<span class="k">def</span> <span class="nf">inputTensor</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">inputTensor</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
     <span class="n">tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">li</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">)):</span>
         <span class="n">letter</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="n">li</span><span class="p">]</span>
@@ -939,7 +848,7 @@ of initial hidden state or some other strategy.</p>
     <span class="k">return</span> <span class="n">tensor</span>
 
 <span class="c1"># ``LongTensor`` of second letter to end (EOS) for target</span>
-<span class="k">def</span> <span class="nf">targetTensor</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">targetTensor</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
     <span class="n">letter_indexes</span> <span class="o">=</span> <span class="p">[</span><span class="n">all_letters</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="n">li</span><span class="p">])</span> <span class="k">for</span> <span class="n">li</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="p">))]</span>
     <span class="n">letter_indexes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n_letters</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># EOS</span>
     <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">LongTensor</span><span class="p">(</span><span class="n">letter_indexes</span><span class="p">)</span>
@@ -953,25 +862,20 @@ of initial hidden state or some other strategy.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÇÉÍÓÖÜáâäæçéëíïóôöøúûüýĆČčďěĽľŁłňŘřŞşŠšŤťůűźżŽžʼ$&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p>For convenience during training we’ll make a <code class="docutils literal notranslate"><span class="pre">randomTrainingExample</span></code>
 function that fetches a random (category, line) pair and turns them into
 the required (category, input, target) tensors.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="c1"># Random item from a list</span>
-<span class="k">def</span> <span class="nf">randomChoice</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">randomChoice</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">l</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
 
 <span class="c1"># Make category, input, and target tensors from a random category, line pair</span>
-<span class="k">def</span> <span class="nf">randomTrainingExample</span><span class="p">(</span><span class="n">samples_all</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">randomTrainingExample</span><span class="p">(</span><span class="n">samples_all</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">):</span>
     <span class="n">sample</span> <span class="o">=</span> <span class="n">randomChoice</span><span class="p">(</span><span class="n">samples_all</span><span class="p">)</span>
     <span class="n">input_line_tensor</span> <span class="o">=</span> <span class="n">inputTensor</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span>
     <span class="n">target_line_tensor</span> <span class="o">=</span> <span class="n">targetTensor</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span>
@@ -988,9 +892,7 @@ the required (category, input, target) tensors.</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">NLLLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.0005</span>
-
-<span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">input_line_tensor</span><span class="p">,</span> <span class="n">target_line_tensor</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">train</span><span class="p">(</span><span class="n">input_line_tensor</span><span class="p">,</span> <span class="n">target_line_tensor</span><span class="p">):</span>
     <span class="n">target_line_tensor</span> <span class="o">=</span> <span class="n">target_line_tensor</span><span class="o">.</span><span class="n">unsqueeze_</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
     <span class="n">rnn</span><span class="o">.</span><span class="n">initHidden</span><span class="p">()</span>
 
@@ -1017,10 +919,10 @@ the required (category, input, target) tensors.</p>
 <code class="docutils literal notranslate"><span class="pre">timeSince(timestamp)</span></code> function which returns a human readable string:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
-<span class="k">def</span> <span class="nf">timeSince</span><span class="p">(</span><span class="n">since</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">timeSince</span><span class="p">(</span><span class="n">since</span><span class="p">):</span>
     <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">now</span> <span class="o">-</span> <span class="n">since</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">s</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span>
@@ -1038,8 +940,8 @@ in <code class="docutils literal notranslate"><span class="pre">all_losses</span
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rnn</span> <span class="o">=</span> <span class="n">RNN</span><span class="p">(</span><span class="n">n_letters</span><span class="p">,</span> <span class="n">n_hidden</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 
-<span class="n">n_iters</span> <span class="o">=</span> <span class="mi">50000</span>
-<span class="n">print_every</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">n_iters</span> <span class="o">=</span> <span class="o">?</span>
+<span class="n">print_every</span> <span class="o">=</span> <span class="o">?</span>
 <span class="n">plot_every</span> <span class="o">=</span> <span class="mi">500</span>
 <span class="n">all_losses</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Reset every ``plot_every`` ``iters``</span>
@@ -1062,60 +964,6 @@ in <code class="docutils literal notranslate"><span class="pre">all_losses</span
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0m 1s (1000 2%) 4.1831
-0m 3s (2000 4%) 3.3063
-0m 4s (3000 6%) 3.1234
-0m 6s (4000 8%) 3.0584
-0m 8s (5000 10%) 2.9909
-0m 9s (6000 12%) 3.0037
-0m 10s (7000 14%) 2.9716
-0m 11s (8000 16%) 2.9428
-0m 12s (9000 18%) 2.8910
-0m 13s (10000 20%) 2.8918
-0m 14s (11000 22%) 2.8934
-0m 15s (12000 24%) 2.8648
-0m 16s (13000 26%) 2.8593
-0m 17s (14000 28%) 2.8302
-0m 17s (15000 30%) 2.8339
-0m 18s (16000 32%) 2.8196
-0m 19s (17000 34%) 2.7785
-0m 20s (18000 36%) 2.7965
-0m 21s (19000 38%) 2.8486
-0m 22s (20000 40%) 2.7910
-0m 23s (21000 42%) 2.7872
-0m 24s (22000 44%) 2.7808
-0m 25s (23000 46%) 2.7905
-0m 26s (24000 48%) 2.7641
-0m 27s (25000 50%) 2.7631
-0m 28s (26000 52%) 2.7881
-0m 29s (27000 54%) 2.7456
-0m 30s (28000 56%) 2.7558
-0m 31s (29000 57%) 2.7475
-0m 32s (30000 60%) 2.7762
-0m 33s (31000 62%) 2.7606
-0m 33s (32000 64%) 2.7407
-0m 34s (33000 66%) 2.7683
-0m 35s (34000 68%) 2.7296
-0m 36s (35000 70%) 2.7569
-0m 37s (36000 72%) 2.7435
-0m 38s (37000 74%) 2.7510
-0m 39s (38000 76%) 2.7040
-0m 40s (39000 78%) 2.7241
-0m 41s (40000 80%) 2.7182
-0m 42s (41000 82%) 2.7414
-0m 43s (42000 84%) 2.7456
-0m 45s (43000 86%) 2.7410
-0m 46s (44000 88%) 2.7211
-0m 47s (45000 90%) 2.7192
-0m 49s (46000 92%) 2.7157
-0m 50s (47000 94%) 2.7389
-0m 51s (48000 96%) 2.7124
-0m 52s (49000 98%) 2.7027
-0m 53s (50000 100%) 2.7013
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 </section>
@@ -1125,7 +973,7 @@ in <code class="docutils literal notranslate"><span class="pre">all_losses</span
 learning:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">all_losses</span><span class="p">);</span>
@@ -1138,17 +986,15 @@ learning:</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 
 <span class="n">dt</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">%H%M%S&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
 
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;results&#39;</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
 <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">rnn</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="sa">f</span><span class="s1">&#39;results/model2_jmena_rnn_</span><span class="si">{</span><span class="n">dt</span><span class="si">}</span><span class="s1">.pth&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>20250623032853
 </pre></div>
 </div>
 </div>
@@ -1158,11 +1004,6 @@ learning:</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rnn</span> <span class="o">=</span> <span class="n">RNN</span><span class="p">(</span><span class="n">n_letters</span><span class="p">,</span> <span class="n">n_hidden</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 
 <span class="n">rnn</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;results/model2_jmena_rnn_20250623032853.pth&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;All keys matched successfully&gt;
 </pre></div>
 </div>
 </div>
@@ -1190,7 +1031,7 @@ state</p></li>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">max_length</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="c1"># Sample from a category and starting letter</span>
-<span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="n">start_letter</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sample</span><span class="p">(</span><span class="n">start_letter</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>  <span class="c1"># no need to track history in sampling</span>
         <span class="nb">input</span> <span class="o">=</span> <span class="n">inputTensor</span><span class="p">(</span><span class="n">start_letter</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)</span>
         <span class="n">rnn</span><span class="o">.</span><span class="n">initHidden</span><span class="p">()</span>
@@ -1222,7 +1063,7 @@ state</p></li>
         <span class="k">return</span> <span class="n">output_name</span>
 
 <span class="c1"># Get multiple samples from one category and multiple starting letters</span>
-<span class="k">def</span> <span class="nf">samples</span><span class="p">(</span><span class="n">start_letters</span><span class="o">=</span><span class="s1">&#39;ABC&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">samples</span><span class="p">(</span><span class="n">start_letters</span><span class="o">=</span><span class="s1">&#39;ABC&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">start_letter</span> <span class="ow">in</span> <span class="n">start_letters</span><span class="p">:</span>
         <span class="n">sample_name</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="n">start_letter</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sample_name</span><span class="si">}{</span><span class="s1">&#39; &#39;</span><span class="o">*</span><span class="p">(</span><span class="mi">22</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">sample_name</span><span class="p">))</span><span class="si">}</span><span class="s1">| je v datasetu: &#39;</span><span class="p">,</span> <span class="n">sample_name</span> <span class="ow">in</span> <span class="n">names_all</span><span class="p">)</span>
@@ -1232,27 +1073,15 @@ state</p></li>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Anera                 | je v datasetu:  False
-Dima                  | je v datasetu:  True
-Jaisa                 | je v datasetu:  False
-Lajin                 | je v datasetu:  False
-Hara                  | je v datasetu:  False
-Oiene                 | je v datasetu:  False
-Lorte                 | je v datasetu:  False
-Arie                  | je v datasetu:  True
-Darin                 | je v datasetu:  True
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="vizualizace">
 <h2>Vizualizace<a class="headerlink" href="#vizualizace" title="Link to this heading">#</a></h2>
+<p>!pip install torchview</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">torchviz</span> <span class="kn">import</span> <span class="n">make_dot</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">torchviz</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_dot</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PATH&quot;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">os</span><span class="o">.</span><span class="n">pathsep</span> <span class="o">+</span> <span class="s1">&#39;C:/Program Files/Graphviz/bin/&#39;</span>
 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">rnn</span><span class="p">(</span><span class="n">inputTensor</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="n">n_letters</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">))</span>  <span class="c1"># Get predictions for the first training sample</span>
@@ -1269,8 +1098,8 @@ Darin                 | je v datasetu:  True
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision</span>
-<span class="kn">from</span> <span class="nn">torchview</span> <span class="kn">import</span> <span class="n">draw_graph</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">torchvision</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">torchview</span><span class="w"> </span><span class="kn">import</span> <span class="n">draw_graph</span>
 
 <span class="n">rnn</span><span class="o">.</span><span class="n">initHidden</span><span class="p">()</span>
 <span class="n">model_graph</span> <span class="o">=</span> <span class="n">draw_graph</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">input_size</span><span class="o">=</span><span class="p">(</span><span class="n">n_hidden</span><span class="p">,</span><span class="n">n_letters</span><span class="p">),</span> <span class="n">expand_nested</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
@@ -1279,39 +1108,9 @@ Darin                 | je v datasetu:  True
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0157afa41d1c3395846fc66965e6f058f9f381fc06f6783a3d06a840f6c1cb46.svg" src="../_images/0157afa41d1c3395846fc66965e6f058f9f381fc06f6783a3d06a840f6c1cb46.svg" /></div>
+<img alt="../_images/0157afa41d1c3395846fc66965e6f058f9f381fc06f6783a3d06a840f6c1cb46.svg" src="../_images/0157afa41d1c3395846fc66965e6f058f9f381fc06f6783a3d06a840f6c1cb46.svg" />
 </div>
-</section>
-<section id="ulohy">
-<h2>Úlohy<a class="headerlink" href="#ulohy" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>konstrukce modelu</p>
-<ul class="simple">
-<li><p>ruzne aktivacni funkce, learning rate, pocet rekurentnich bloku, hidden_size</p></li>
-</ul>
-</li>
-<li><p>pridani teploty - ovlivnění výstupu, jak moc si NN vymýslí</p></li>
-<li><p>pridani prvniho znaku - NN bude generovat sama i první znak</p></li>
-<li><p>LSTM, GRU</p></li>
-<li><p>jiny dataset - CZ jmena, jina narodnost, pouze muz/zena</p></li>
-</ol>
-<ul class="simple">
-<li><p>Try with a different dataset of category -&gt; line, for example:</p>
-<ul>
-<li><p>Fictional series -&gt; Character name</p></li>
-<li><p>Part of speech -&gt; Word</p></li>
-<li><p>Country -&gt; City</p></li>
-</ul>
-</li>
-<li><p>Use a “start of sentence” token so that sampling can be done
-without choosing a start letter</p></li>
-<li><p>Get better results with a bigger and/or better shaped network</p>
-<ul>
-<li><p>Try the <code class="docutils literal notranslate"><span class="pre">nn.LSTM</span></code> and <code class="docutils literal notranslate"><span class="pre">nn.GRU</span></code> layers</p></li>
-<li><p>Combine multiple of these RNNs as a higher level network</p></li>
-</ul>
-</li>
-</ul>
+</div>
 </section>
 <section id="zdroje">
 <h2>Zdroje<a class="headerlink" href="#zdroje" title="Link to this heading">#</a></h2>
@@ -1347,7 +1146,7 @@ without choosing a start letter</p></li>
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1376,6 +1175,7 @@ without choosing a start letter</p></li>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Small-scale ChatGPT - generování textu pomocí neuronových sítí</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-i">Příprava dat I</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-ii">Příprava dat II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-neuronove-site">Konstrukce neuronové sítě</a></li>
@@ -1389,7 +1189,6 @@ without choosing a start letter</p></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-the-losses">Plotting the Losses</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vzorkovani-natrenovane-rnn">Vzorkování natrénováné RNN</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace">Vizualizace</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ulohy">Úlohy</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zdroje">Zdroje</a></li>
 </ul>
 </li>
@@ -1442,8 +1241,8 @@ By Jiří Löffelmann
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
