@@ -794,10 +794,11 @@ document.write(`
     <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
     <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">inference_mode</span><span class="p">():</span>
         <span class="c1"># 1. Forward pass</span>
-        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span> 
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randperm</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])[:</span><span class="n">batch_size</span><span class="p">]</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
         <span class="c1"># 2. Caculate loss/accuracy</span>
-        <span class="n">test_loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-        <span class="n">test_acc</span> <span class="o">=</span> <span class="n">accuracy_fn</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+        <span class="n">test_loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">y_test</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">test_acc</span> <span class="o">=</span> <span class="n">accuracy_fn</span><span class="p">(</span><span class="n">y_test</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">y_pred</span><span class="p">)</span>
         
         <span class="n">test_acc_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">test_acc</span><span class="p">)</span>
 
