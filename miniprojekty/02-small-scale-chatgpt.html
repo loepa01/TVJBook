@@ -488,7 +488,8 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Seznámení s datasety - jména ČR (můž, žena, neutrál), různé státy</p></li>
 <li><p>Vykreslit histogram délek jmen</p></li>
-<li><p>Konstrukce rekureního modelu</p>
+<li><p>Konstrukce tří-vrstvého perceptronu - vyzkoušení generování slov</p></li>
+<li><p>Konstrukce rekureního modelu - potřeba k zahrnutí vzájemných závislostí prvků sekvence</p>
 <ul class="simple">
 <li><p>vyzkoušet: různé aktivační funkce, learning rate, počet rekurentních bloků, počet skrytých neuronů</p></li>
 </ul>
@@ -530,7 +531,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;cuda&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;cpu&#39;
 </pre></div>
 </div>
 </div>
@@ -545,6 +546,11 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>device(type=&#39;cpu&#39;)
 </pre></div>
 </div>
 </div>
@@ -585,9 +591,27 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jmena_all</span> <span class="o">=</span> <span class="n">jmena_all</span><span class="p">[</span><span class="n">jmena_typ</span> <span class="o">==</span> <span class="s1">&#39;ZENA&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;AALIYAH&#39;, &#39;AAMU&#39;, &#39;AARIFA&#39;, ..., &#39;ŽIVANA&#39;, &#39;ŽOFIA&#39;, &#39;ŽOFIE&#39;],
+      shape=(3950,), dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jmena_all</span><span class="p">,</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">jmena_all</span><span class="p">,</span> <span class="n">return_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">jmena_typ</span> <span class="o">=</span> <span class="n">jmena_typ</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
 <span class="n">jmena_all</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">jmena_typ</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>((11172,), (11172,))
 </pre></div>
 </div>
 </div>
@@ -595,6 +619,12 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jmena_all</span><span class="p">[:</span><span class="mi">11</span><span class="p">]</span>  <span class="c1"># every 150th name</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;AADAR&#39;, &#39;AAGTE&#39;, &#39;AAI&#39;, &#39;AAIKE&#39;, &#39;AAJARAQ&#39;, &#39;AAJU&#39;, &#39;AAJUNNGUAQ&#39;,
+       &#39;AAKA&#39;, &#39;AAKKULUK&#39;, &#39;AAL&#39;, &#39;AALIYAH&#39;], dtype=object)
 </pre></div>
 </div>
 </div>
@@ -625,12 +655,64 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11172
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># DOPLNIT: histogram (krok 2)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">names_length</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>([&lt;matplotlib.axis.XTick at 0x1a0d0a25c90&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a25300&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6c6d0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6d3c0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6e0b0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d08030a0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6efe0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6fcd0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ad8a00&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ad96f0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ad8670&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ada590&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0adb280&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0adbf70&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ada200&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ac8c10&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0ac9900&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0aca5f0&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0a6e650&gt;,
+  &lt;matplotlib.axis.XTick at 0x1a0d0acb520&gt;],
+ [Text(0, 0, &#39;0&#39;),
+  Text(1, 0, &#39;1&#39;),
+  Text(2, 0, &#39;2&#39;),
+  Text(3, 0, &#39;3&#39;),
+  Text(4, 0, &#39;4&#39;),
+  Text(5, 0, &#39;5&#39;),
+  Text(6, 0, &#39;6&#39;),
+  Text(7, 0, &#39;7&#39;),
+  Text(8, 0, &#39;8&#39;),
+  Text(9, 0, &#39;9&#39;),
+  Text(10, 0, &#39;10&#39;),
+  Text(11, 0, &#39;11&#39;),
+  Text(12, 0, &#39;12&#39;),
+  Text(13, 0, &#39;13&#39;),
+  Text(14, 0, &#39;14&#39;),
+  Text(15, 0, &#39;15&#39;),
+  Text(16, 0, &#39;16&#39;),
+  Text(17, 0, &#39;17&#39;),
+  Text(18, 0, &#39;18&#39;),
+  Text(19, 0, &#39;19&#39;)])
+</pre></div>
+</div>
+<img alt="../_images/f52b50527f9b63913a10030328981bd5dc7f3fcfa68e507a0381471896634461.png" src="../_images/f52b50527f9b63913a10030328981bd5dc7f3fcfa68e507a0381471896634461.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1066,7 +1148,8 @@ state</p></li>
 <span class="k">def</span><span class="w"> </span><span class="nf">samples</span><span class="p">(</span><span class="n">start_letters</span><span class="o">=</span><span class="s1">&#39;ABC&#39;</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">start_letter</span> <span class="ow">in</span> <span class="n">start_letters</span><span class="p">:</span>
         <span class="n">sample_name</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="n">start_letter</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sample_name</span><span class="si">}{</span><span class="s1">&#39; &#39;</span><span class="o">*</span><span class="p">(</span><span class="mi">22</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">sample_name</span><span class="p">))</span><span class="si">}</span><span class="s1">| je v datasetu: &#39;</span><span class="p">,</span> <span class="n">sample_name</span> <span class="ow">in</span> <span class="n">names_all</span><span class="p">)</span>
+        <span class="n">txt</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">*</span><span class="p">(</span><span class="mi">22</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">sample_name</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sample_name</span><span class="si">}{</span><span class="n">txt</span><span class="si">}</span><span class="s1">| je v datasetu: &#39;</span><span class="p">,</span> <span class="n">sample_name</span> <span class="ow">in</span> <span class="n">names_all</span><span class="p">)</span>
 
 <span class="c1">#samples(&#39;ADJLHOLAD&#39;, temperature = &#39;max&#39;)</span>
 <span class="n">samples</span><span class="p">(</span><span class="s1">&#39;ADJLHOLAD&#39;</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">)</span>
@@ -1114,6 +1197,7 @@ state</p></li>
 </section>
 <section id="zdroje">
 <h2>Zdroje<a class="headerlink" href="#zdroje" title="Link to this heading">#</a></h2>
+<p>https://karpathy.github.io/2015/05/21/rnn-effectiveness/</p>
 <p>https://docs.pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html</p>
 <p>https://www.tensorflow.org/text/tutorials/text_generation</p>
 </section>
