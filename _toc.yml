@@ -14,10 +14,10 @@ parts:
 
   - caption: "Miniprojekty"
     numbered: False
-    chapters:      
-    - file: miniprojekty/01-rozpoznavani-cislic
+    chapters:
+    - file: miniprojekty-vyplnene/01-rozpoznavani-cislic
       title: 1. Rozpoznávání číslic pomocí neuronových sítí
       
-    - file: miniprojekty/02-small-scale-chatgpt
+    - file: miniprojekty-vyplnene/02-small-scale-chatgpt
       title: 2. Small-scale ChatGPT - generování textu pomocí neuronových sítí
       
