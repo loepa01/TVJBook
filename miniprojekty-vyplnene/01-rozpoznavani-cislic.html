@@ -449,6 +449,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat">Příprava dat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-modelu">Konstrukce modelu</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp-model">MLP model</a></li>
@@ -479,6 +480,25 @@ document.write(`
                   
   <section id="rozpoznavani-cislic-pomoci-neuronovych-siti">
 <h1>Rozpoznávání číslic pomocí neuronových sítí<a class="headerlink" href="#rozpoznavani-cislic-pomoci-neuronovych-siti" title="Link to this heading">#</a></h1>
+<section id="ukoly">
+<h2>Úkoly<a class="headerlink" href="#ukoly" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Seznámení s datasetem</p></li>
+<li><p>Vykreslit histogram počtu jednotlivých číslic v datasetu</p></li>
+<li><p>Konstrukce modelu I - MLP (více vrstvý perceptron)</p></li>
+<li><p>Vylepšení pomocí pokročilých technik učení + ladění <em>hyperparametrů</em> (learning rate, epochy, batch size, počet skrytých neuronů, dropout)</p></li>
+<li><p>Konstrukce modelu II - přidání konvolučních vrstev</p></li>
+<li><p>Vylepšení pomocí pokročilých technik učení + ladění <em>hyperparametrů</em> (learning rate, epochy, batch size, počet skrytých neuronů, dropout)</p></li>
+<li><p>Srovnání MLP vs ConvNet</p></li>
+<li><p>Analýza vah konvolučních vrstev, interpretace aktivací neuronů a chybné případy (závěr notebooku)</p></li>
+<li><p>Cíl: &gt;99% přesnost na testovacích datech</p></li>
+</ol>
+<p>Bonusy:</p>
+<ol class="arabic simple" start="0">
+<li><p>zvýšení přesnosti na 99.9 %</p></li>
+<li><p>jiný dataset: MNIST Fashion?, …</p></li>
+<li><p>kreslící appka?</p></li>
+</ol>
 <p>!pip install -r requirements.txt</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -522,6 +542,7 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
 <section id="priprava-dat">
 <h2>Příprava dat<a class="headerlink" href="#priprava-dat" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1600,6 +1621,7 @@ torch.Size([1, 128, 9, 9])
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat">Příprava dat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-modelu">Konstrukce modelu</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp-model">MLP model</a></li>

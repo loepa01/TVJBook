@@ -449,6 +449,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Small-scale ChatGPT - generování textu pomocí neuronových sítí</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-i">Příprava dat I</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-ii">Příprava dat II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-neuronove-site">Konstrukce neuronové sítě</a></li>
@@ -480,6 +481,26 @@ document.write(`
                   
   <section id="small-scale-chatgpt-generovani-textu-pomoci-neuronovych-siti">
 <h1>2. Small-scale ChatGPT - generování textu pomocí neuronových sítí<a class="headerlink" href="#small-scale-chatgpt-generovani-textu-pomoci-neuronovych-siti" title="Link to this heading">#</a></h1>
+<section id="ukoly">
+<h2>Úkoly<a class="headerlink" href="#ukoly" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Seznámení s datasety - jména ČR (můž, žena, neutrál), různé státy</p></li>
+<li><p>Vykreslit histogram délek jmen</p></li>
+<li><p>Konstrukce tří-vrstvého perceptronu - vyzkoušení generování slov</p></li>
+<li><p>Konstrukce rekureního modelu - potřeba k zahrnutí vzájemných závislostí prvků sekvence</p>
+<ul class="simple">
+<li><p>vyzkoušet: různé aktivační funkce, learning rate, počet rekurentních bloků, počet skrytých neuronů</p></li>
+</ul>
+</li>
+<li><p>Přidání teploty - ovlivnění výstupu, jak moc si NN vymýšlí</p></li>
+<li><p>Přidání prvního znaku - NN bude generovat sama i první znak jména</p></li>
+<li><p>Cíl: Rozumně vypadající vygenerovaná jména.</p></li>
+</ol>
+<p>Bonusy:</p>
+<ol class="arabic simple">
+<li><p>Jiný dataset - CZ jména, jiná národnost, pouze muž/žena</p></li>
+<li><p>LSTM, GRU ?</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># For tips on running notebooks in Google Colab, see</span>
@@ -532,6 +553,7 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
 <section id="priprava-dat-i">
 <h2>Příprava dat I<a class="headerlink" href="#priprava-dat-i" title="Link to this heading">#</a></h2>
 <p>Databáze evropských jmen a příjmení: https://data.europa.eu/data/datasets/5bc35259634f41122d982759?locale=cs</p>
@@ -1665,6 +1687,7 @@ Derana                | je v datasetu:  False
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Small-scale ChatGPT - generování textu pomocí neuronových sítí</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ukoly">Úkoly</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-i">Příprava dat I</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#priprava-dat-ii">Příprava dat II</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konstrukce-neuronove-site">Konstrukce neuronové sítě</a></li>
